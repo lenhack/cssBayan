@@ -54,6 +54,10 @@ section:hover .meme{
     display: block;
 }
 
+section:hover{
+    color:ghostwhite;
+}
+
 .section-title{
     width: 1280px;
     border-bottom: 1px solid #595959;
@@ -81,6 +85,7 @@ main:hover .active-main{
 
 section:hover .open{
     display: block;
+    filter: invert(94%) sepia(9%) saturate(1335%) hue-rotate(188deg) brightness(105%) contrast(103%);
 }
 
 section:hover .close{
