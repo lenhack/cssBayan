@@ -41,14 +41,48 @@ section{
 }
 
 
-img{
+.meme{
     max-width: 500px;
+    margin: 70px 0;
 }
 
-section img{
+section .meme{
     display: none;
 }
 
-section:hover img{
+section:hover .meme{
     display: block;
+}
+
+.section-title{
+    width: 1280px;
+    border-bottom: 1px solid #595959;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+}
+
+main .active-main{
+    display: none;
+}
+
+main:hover .active-main{
+    display: block;
+}
+
+.active-main .open{
+    display: none;
+}
+
+.active-main .close{
+    display: block;
+    width: 40px;
+}
+
+section:hover .open{
+    display: block;
+}
+
+section:hover .close{
+    display: none;
 }
