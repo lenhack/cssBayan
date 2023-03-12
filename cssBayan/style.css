@@ -8,9 +8,13 @@ body{
     max-width: 1280px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
+    width: 80vw;
     color: black;
     display: flex;
     justify-content: center;
@@ -68,7 +72,7 @@ section:hover{
 }
 
 .section-title{
-    width: 1280px;
+    width: 80vw;
     border-bottom: 1px solid #595959;
     display: flex;
     justify-content:space-between;
