@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: darkgray;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 80vw;
+    height: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid #595959;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+section{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: width .5s;
+}
+
+
+.meme{
+    width: 300px;
+    margin: 30px 0;
+    transition: 1s;
+}
+
+.meme:hover{
+    width: 500px;
+}
+
+section .meme{
+    transition: 1s;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+section:hover .meme{
+    opacity: 1;
+    height: auto;
+    padding: 30px;
+}
+
+section:hover{
+    color:ghostwhite;
+}
+
+.section-title{
+    width: 80vw;
+    border-bottom: 1px solid #595959;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+}
+
+main .active-main{
+    display: none;
+}
+
+main:hover .active-main{
+    display: block;
+}
+
+main .open,
+main .close{
+    width: 20px;
+}
+
+.active-main .open{
+    display: block;
+}
+
+.active-main .close{
+    display: none;
+}
+
+section:hover .open{
+    display: none;
+}
+
+section:hover .close{
+    display: block;
+    filter: invert(94%) sepia(9%) saturate(1335%) hue-rotate(188deg) brightness(105%) contrast(103%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 819px){
+    body{
+        max-width: 819px;
+    }
+
+    header{
+        font-size: 18px;
+        height: 30px;
+        padding: 15px;
+    }
+
+    section{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1279px){
+    body{
+        max-width: 819px;
+    }
+
+    header{
+        font-size: 24px;
+        height: 40px;
+        padding: 20px;
+    }
+
+    section{
+        font-size: 12px;
+    }
+}
